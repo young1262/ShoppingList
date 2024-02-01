@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #e9ddce;
+  padding: 50px;
+}
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+main {
+  background: #f0f0f0;
+  max-width: 600px;
+  min-width: 360px;
+  margin: auto;
+  box-shadow: 5px 5px 20px rgba(109, 41, 50, 0.5);
+   border-radius: 16px;  /* 8,16,24px 이상적임*/
+}
+
+header {
+  height: 48px;
+  background: linear-gradient(60deg, #d8c9b5,#6D2932, #561C24) ;
+  border-radius: 16px 16px 0 0;
+}
+header h1 {
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+#content {
+  padding: 10px 30px 30px;
+  height: 500px;
+  overflow-y: auto
+  ;
+}
+ul.items {}
+.item_row {
+  border-bottom: 1px solid rgb(153, 152, 152);
+  
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+  .item_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 3개가 셋트로 사용*/
+  }
+  .itemDel_btn {
+    color: gray;
+    transition: 0.2s ease-in;
+  }
+  .itemDel_btn:hover {
+    color: #561C24;
+    transform: scale(1.1);
+  }
+
+footer {
+  background: linear-gradient(60deg, #d8c9b5,#6D2932, #561C24) ;
+  border-radius: 0 0 16px 16px;
+  text-align: center;
+}
+.footer_input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 20px;
+ 
+}
+.footer_input::placeholder {
+  font-size: 16px;
+  color: gray;
+}
+
+.footerAdd_btn {
+  height: 48px;
+  font-size: 24px;
+  color: rgba(240, 240, 240, 0.5);
+  transition: 0.2s ease-in;
+}
+.footerAdd_btn:hover {
+  color: rgba(240, 240, 240, 1);
+  transform: scale(1.1);
+}
